@@ -61,16 +61,6 @@ public class MainProgram {
 		printFinalPath();
 		printFinalGrid();
 		
-		searchingAlgorithm=new RBFS();
-		graph=new StateSpace();
-		readData();
-		makeStateSpace();
-		System.out.println("RBFS");
-		finalPath=searchingAlgorithm.start(graph,startString,goalString);
-		System.out.println("Cost: " + SearchingAlgorithm.getFinalCost(graph,goalString) );
-		printFinalPath();
-		printFinalGrid();
-		
 	}
 
 	void readData() throws FileNotFoundException {
